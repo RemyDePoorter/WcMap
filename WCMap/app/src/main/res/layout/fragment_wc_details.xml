@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="records"
+            type="com.android.example.wcmap.model.wc.Records" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.WcDetailsFragment"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/specloc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:layout_marginTop="10dp"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/type"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/specloc" />
+
+        <TextView
+            android:id="@+id/district"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/district"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/type" />
+
+        <TextView
+            android:id="@+id/street"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/street"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/district" />
+
+        <TextView
+            android:id="@+id/num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/num"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/street" />
+
+        <TextView
+            android:id="@+id/level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/level"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/num" />
+
+        <TextView
+            android:id="@+id/management"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/management"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/level" />
+
+        <TextView
+            android:id="@+id/pmr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pmr"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/management" />
+
+        <TextView
+            android:id="@+id/free"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/free"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pmr" />
+
+        <TextView
+            android:id="@+id/hours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hours"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/free" />
+
+        <TextView
+            android:id="@+id/typeInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="TextView"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/type"
+            app:layout_constraintTop_toBottomOf="@+id/specloc" />
+
+        <TextView
+            android:id="@+id/districtInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="TextView"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/district"
+            app:layout_constraintTop_toBottomOf="@+id/typeInfo" />
+
+        <TextView
+            android:id="@+id/streetInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="TextView"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/street"
+            app:layout_constraintTop_toBottomOf="@+id/districtInfo" />
+
+        <TextView
+            android:id="@+id/numInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="TextView"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/num"
+            app:layout_constraintTop_toBottomOf="@+id/streetInfo" />
+
+        <TextView
+            android:id="@+id/levelInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="TextView"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/level"
+            app:layout_constraintTop_toBottomOf="@+id/numInfo" />
+
+        <TextView
+            android:id="@+id/managementInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="TextView"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/management"
+            app:layout_constraintTop_toBottomOf="@+id/levelInfo" />
+
+        <TextView
+            android:id="@+id/pmrInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="TextView"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/pmr"
+            app:layout_constraintTop_toBottomOf="@+id/managementInfo" />
+
+        <TextView
+            android:id="@+id/freeInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="TextView"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/free"
+            app:layout_constraintTop_toBottomOf="@+id/pmrInfo" />
+
+        <TextView
+            android:id="@+id/hoursInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="TextView"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/hours"
+            app:layout_constraintTop_toBottomOf="@+id/freeInfo" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

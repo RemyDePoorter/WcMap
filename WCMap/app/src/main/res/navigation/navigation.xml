@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/fragment_connexion">
+
+    <fragment
+        android:id="@+id/fragment_connexion"
+        android:name="com.android.example.wcmap.view.ConnexionFragment"
+        android:label="Connexion"
+        tools:layout="@layout/fragment_connexion">
+        <action
+            android:id="@+id/action_fragment_connexion_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
+        <action
+            android:id="@+id/action_fragment_connexion_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.android.example.wcmap.view.AboutFragment"
+        android:label="About"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.android.example.wcmap.view.MapsFragment"
+        android:label="Maps"
+        tools:layout="@layout/fragment_maps">
+        <action
+            android:id="@+id/action_mapsFragment_to_fragment_connexion"
+            app:destination="@id/fragment_connexion" />
+        <action
+            android:id="@+id/action_mapsFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.android.example.wcmap.view.MainFragment"
+        android:label="Menu">
+        <action
+            android:id="@+id/action_mainFragment_to_fragment_connexion"
+            app:destination="@id/fragment_connexion" />
+        <action
+            android:id="@+id/action_mainFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.android.example.wcmap.view.list.ListFragment"
+        android:label="List of toilets"
+        tools:layout="@layout/fragment_list">
+        <action
+            android:id="@+id/action_listFragment_to_wcDetailsFragment2"
+            app:destination="@id/wcDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/wcDetailsFragment"
+        android:name="com.android.example.wcmap.view.WcDetailsFragment"
+        android:label="Details">
+        <argument android:name="recordDetail" app:argType="com.android.example.wcmap.model.wc.Records"/>
+    </fragment>
+        
+</navigation>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_run"
+        android:icon="@drawable/ic_run"
+        android:title="@string/run" />
+    <item
+        android:id="@+id/action_list"
+        android:icon="@drawable/ic_list"
+        android:title="@string/list" />
+    <item
+        android:id="@+id/action_map"
+        android:icon="@drawable/ic_map"
+        android:title="@string/map" />
+    <item
+        android:id="@+id/action_favorites"
+        android:icon="@drawable/ic_star"
+        android:title="@string/favorites" />
+    <item
+        android:id="@+id/action_logout"
+        android:icon="@drawable/ic_exit"
+        android:title="@string/logout" />
+</menu>

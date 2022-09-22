@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">WC Map</string>
+    <string name="title_activity_info">info</string>
+
+    <!-- Connexion -->
+    <string name="email">e-mail</string>
+    <string name="registerButton">Register</string>
+    <string name="connexionButton">Connexion</string>
+    <string name="emailUpdated">Email updated ✅</string>
+    <string name="invalidEmail">Invalid Email ❌</string>
+    <string name="noInternet">No internet connexion 📶</string>
+    <string name="emailAdded">Email added to Database ✅</string>
+
+    <!-- about -->
+    <string name="matricule">52063</string>
+    <string name="lastname">De Poorter</string>
+    <string name="firstname">Rémy</string>
+    <string name="about">About</string>
+
+    <!-- Bottom navigation view -->
+    <string name="run">Run</string>
+    <string name="map">Map</string>
+    <string name="list">List</string>
+    <string name="favorites">Favorites</string>
+    <string name="logout">Logout</string>
+
+    <!-- Details wc -->
+    <string name="type">Type :</string>
+    <string name="district">District :</string>
+    <string name="street">Street :</string>
+    <string name="num">Street number :</string>
+    <string name="level">Level :</string>
+    <string name="management">Management :</string>
+    <string name="pmr">Disabled access :</string>
+    <string name="free">Free :</string>
+    <string name="hours">Opening hours :</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
